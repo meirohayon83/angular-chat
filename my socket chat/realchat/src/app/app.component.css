@@ -1,0 +1,119 @@
+   /* .move{
+
+  margin-left:800px; 
+  margin-top: -88px;
+} 
+
+ select{
+
+    width: 603px;
+    height: 37px;
+    color: rgb(34, 41, 41);
+    margin-left: -160px;
+}   
+
+ .pull-right{
+
+    float: right;
+    margin-top:-37px;
+      margin-left: 1300px; 
+} 
+
+.well{
+
+    background-color: aqua;
+    border: 1px solid red;
+    height:200px;
+    padding:25px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2{
+     margin-left: 550px;
+     margin-bottom: 100px;
+     text-transform: uppercase;
+     color: rgb(47, 121, 121);
+     margin-top: 30px;
+     font-weight: bold;
+}
+
+label{
+    color: silver;
+    font-weight: bold;
+}
+
+ .btn{
+   
+    margin-right: 10px;
+    width:75px;
+
+} 
+
+ #choose{
+
+    margin-left: -155px;
+}
+ 
+.from-group{
+
+    margin-top: 200px;
+} 
+
+
+.container-fluid{
+
+    height: 100%;
+    width:90%;
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+.head{
+    margin: 0 auto;
+    width: 80%;
+    height: 700px;
+}
+
+ .well{
+
+
+
+    margin: 0 auto;
+    background-color: rgb(162, 204, 204);
+    border: 1px solid red;
+    /* height: auto initial; */
+    padding:25px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* height: auto; */
+    min-height: 300px;
+    max-height:300px ;
+    overflow: auto;
+}
+
+
+
+ 
+
+
+
+

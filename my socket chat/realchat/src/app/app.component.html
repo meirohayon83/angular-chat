@@ -1,0 +1,175 @@
+<!-- <div class="container-fluid">
+  <div class="row">
+
+    <h2>real time chat aplication</h2>
+    
+  </div> -->
+
+<div class="head">
+
+  <nav aria-label="breadcrumb" >
+    <div  class="d-flex justify-content-center p-3 mb-2 mt-2 bg-secondary text-uppercase font-weight-bold italic h1" >CHAT</div>
+  </nav>
+
+  <div *ngIf="authenticate" class="d-flex justify-content-center p-3 mb-2 bg-danger text-white">wellcome:{{user}} you in {{room}} room  </div>
+
+  
+    <div class="form-row">
+      <div class="col">
+        <label for="disabledTextInput font-weight-bold h3">Username</label>
+        <input type="text" [(ngModel)]="user" id="disabledTextInput" class="form-control" placeholder="enter username">
+      </div>
+      <div class="col">
+        <label id="choose" for="roomInput font-weight-bold h3">choose room</label>
+        <select  name="roomInput" id="roomInput" class="form-control " [(ngModel)]="room" >
+          <option >Choose...</option>
+          <option  value="Lobby" >Lobby</option>
+          <option value="Hall">Hall</option>
+          <option value="Deluxe">Deluxe</option>
+    
+        </select>
+    
+      </div>
+    </div>
+<div class="p-3 mt-2 ml-2 " > 
+    <button  type="button" class="btn btn-primary px-4 ml-1" (click)="join()">join</button>
+    <button type ="button" class="btn btn-danger px-4 ml-1" (click)="leave()">leave</button>
+    
+   </div> 
+  
+
+
+
+
+<!-- 
+
+  <form>
+    
+      <div class="form-group">
+        <label for="disabledTextInput">Username</label>
+        <input type="text" [(ngModel)]="user" id="disabledTextInput" class="form-control" placeholder="enter username">
+      </div>
+      <div class="form-group">
+        <label for="disabledSelect">choose room</label>
+        <select  id="disabledSelect"  class="from-control" [(ngModel)]="room" >
+        
+          <option value="Lobby" select>Lobby</option>
+          <option value="Hall">Hall</option>
+          <option value="Deluxe">Deluxe</option>
+    
+        </select>
+      </div>
+      <button  type="submit" class="btn btn-primary" (click)="join()">join</button>
+      <button type ="submit" class="btn btn-primary" (click)="leave()">leave</button>
+      
+      <div ng-if="join()">{{room}}</div>
+      
+  
+  </form>
+ -->
+
+
+
+  <div class="row">
+    <div class="well">
+        <div *ngFor="let item of messageArray">
+      <span><strong>{{item.user}}:</strong>{{item.message}}</span>
+
+    </div>
+   </div>
+  </div>
+
+  <div class="row">
+
+      <input type="text" class="form-control  mb-4 " [(ngModel)]="messageText" >
+    
+      <button style="margin-top:0px; float: left;" type="button" class="btn btn-secondary pull-right" (click)="sendMessage()">send</button>
+   </div>
+
+
+  </div>
+
+
+
+
+<!-- 
+  <div class="row">
+
+    <div class="col-sm-5">
+       <div class="from-group"> 
+  
+        <label for="username">Username</label>
+        <input type="text" [(ngModel)]="user" class="form-control" id="username" placeholder="enter username">
+
+      </div>
+
+    </div>
+
+  
+
+
+  <div class="col-sm-3">
+     <div class="move"> 
+    <label id="choose" for="roomInput">choose room</label>
+    <select name="roomInput" id="roomInput" class="from-control" [(ngModel)]="room" >
+
+      <option value="Lobby" select>Lobby</option>
+      <option value="Hall">Hall</option>
+      <option value="Deluxe">Deluxe</option>
+
+    </select>
+
+     </div> 
+  </div>
+
+
+  <div class="col-sm-2">
+     <div  class="pull-right"> 
+
+      <button  type="button" class="btn btn-primary" (click)="join()">join</button>
+      <button type ="button" class="btn btn-primary" (click)="leave()">leave</button>
+      <div ng-if="join()">{{room}}</div>
+
+    </div>
+
+   </div> 
+
+  </div> -->
+<!-- 
+
+  <div class="row">
+    <div class="well">
+        <div *ngFor="let item of messageArray">
+      <span><strong>{{item.user}}:</strong>{{item.message}}</span>
+
+    </div>
+   </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="messageText">
+    </div>
+    <div class="col-sm-2">
+
+      <button style="margin-top:0px; float: left;" type="button" class="btn btn-success pull-right" (click)="sendMessage()">send</button>
+    </div>
+
+
+  </div> -->
+
+<!-- </div> -->
+
+
+
+<!-- (click)="join()" -->
+
+
+
+
+
+
+
+
+
+
